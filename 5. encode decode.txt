@@ -1,0 +1,48 @@
+#Encryption
+text= input("Enter your message: ")
+cipher=''
+key= 4
+for x in text:
+    if (x.isupper()):
+        cipher += chr((ord(x)+key-65)%26+65)
+    elif (x.islower()) :
+        cipher += chr((ord(x)+key -97)%26+97)
+    elif (x.isdigit()):
+        cipher += chr((ord(x)+key-48)%10+48)
+    else:
+        cipher +=x
+print("Encrypted Message: ")
+print(cipher)
+#Decryption
+result=''
+for i in cipher:
+    if(i.isupper()) :
+        result += chr((ord(i)-key-65)%26+65)
+    elif (i.islower()) :
+        result += chr((ord(i)-key-97)%26+97)
+    elif (i.isdigit()):
+        result += chr((ord(i)-key-48)%10+48)
+    else:
+        result +=i
+print("Decrypted Message: ")
+print(result)
+
+
+
+theory:
+Encryption:
+
+Encryption is the process of encoding the data. i.e converting plain text into ciphertext. This conversion is done with a key called an encryption key.
+
+Decryption:
+
+
+Decryption is the process of decoding the encoded data. Converting the ciphertext into plain text. This process requires a key that we used for encryption.
+
+We require a key for encryption. There are two main types of keys used for encryption and decryption. They are Symmetric-key and Asymmetric-key.
+
+Symmetric-key Encryption:
+
+
+
+In symmetric-key encryption, the data is encoded and decoded with the same key. This is the easiest way of encryption, but also less secure. The receiver needs the key for decryption, so a safe way need for transferring keys. Anyone with the key can read the data in the middle.

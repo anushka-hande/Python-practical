@@ -1,0 +1,98 @@
+#List
+""" A=[1,2,3,4,5,6,7,8,9,"Name","Surname"]
+print(A)
+A.append("Freedom")
+print(A)
+A.remove(9)
+print(A)
+print(A.index(8))
+B=A.copy()
+print(B) """
+#TupleTuple
+""" thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+print(thistuple)
+print(type(thistuple))
+print(len(thistuple)) """
+#join tuples
+""" tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+tuple3 = tuple1 + tuple2
+print(tuple3) """
+#for loop in tuple
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+ print(x)
+
+
+
+theory:
+List
+Lists are used to store multiple items in a single variable.
+
+Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+Lists are created using square brackets:
+
+ExampleGet your own Python Server
+Create a List:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+List Items
+List items are ordered, changeable, and allow duplicate values.
+
+List items are indexed, the first item has index [0], the second item has index [1] etc.
+
+Ordered
+When we say that lists are ordered, it means that the items have a defined order, and that order will not change.
+
+If you add new items to a list, the new items will be placed at the end of the list.
+
+Note: There are some list methods that will change the order, but in general: the order of the items will not change.
+
+Changeable
+The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.
+
+Allow Duplicates
+Since lists are indexed, lists can have items with the same value:
+
+ExampleGet your own Python Server
+Lists allow duplicate values:
+
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+print(thislist)
+
+
+Tuple
+Tuples are used to store multiple items in a single variable.
+
+Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+
+A tuple is a collection which is ordered and unchangeable.
+
+Tuples are written with round brackets.
+
+ExampleGet your own Python Server
+Create a Tuple:
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+Tuple Items
+Tuple items are ordered, unchangeable, and allow duplicate values.
+
+Tuple items are indexed, the first item has index [0], the second item has index [1] etc.
+
+Ordered
+When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.
+
+Unchangeable
+Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.
+
+Allow Duplicates
+Since tuples are indexed, they can have items with the same value:
+
+ExampleGet your own Python Server
+Tuples allow duplicate values:
+
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
+print(thistuple)

@@ -1,0 +1,75 @@
+Note: filename: mymath.py
+
+#mymathmodule
+def find_hcf(x,y):
+    if x>y:
+        smaller = y
+    else:
+        smaller = x
+    for i in range(1, smaller+1):
+        if ((x%i==0) and (y%i==0)):
+            hcf=i
+    return hcf
+
+def find_lcm(x,y) :
+    lcm=(x*y)//find_hcf(x, y)
+    return lcm
+
+def co_prime(x,y):
+    if (find_hcf(x, y)==1):
+        print("CO PRIME NUMBERS")
+    else:
+        print("NOT CO PRIME NUMBERS")
+
+
+Note: filename: main.py
+
+import mymath
+
+print(mymath.find_hcf(60,48))
+print(mymath.find_lcm(60,48))
+print(mymath.co_prime(17,13))
+
+
+
+theory:
+What is Python Module 
+A Python module is a file containing Python definitions and statements. A module can define functions, classes, and variables. A module can also include runnable code. Grouping related code into a module makes the code easier to understand and use. It also makes the code logically organized.
+Import Module in Python
+We can import the functions, and classes defined in a module to another module using the import statement in some other Python source file. 
+
+
+When the interpreter encounters an import statement, it imports the module if the module is present in the search path. A search path is a list of directories that the interpreter searches for importing a module. For example, to import the module calc.py, we need to put the following command at the top of the script.
+
+Syntax of Python Import
+import module
+Note: This does not import the functions or classes directly instead imports the module only. To access the functions inside the module the dot(.) operator is used.
+
+Importing modules in Python
+Now, we are importing the calc that we created earlier to perform add operation.
+
+
+
+# importing  module calc.py
+import calc
+ 
+print(calc.add(10, 2))
+Output:
+
+12
+The from-import Statement in Python
+Python’s from statement lets you import specific attributes from a module without importing the module as a whole.
+
+Importing specific attributes from the module
+Here, we are importing specific sqrt and factorial attributes from the math module.
+
+
+# importing sqrt() and factorial from the
+# module math
+from math import sqrt, factorial
+ 
+# if we simply do "import math", then
+# math.sqrt(16) and math.factorial()
+# are required.
+print(sqrt(16))
+print(factorial(6))
